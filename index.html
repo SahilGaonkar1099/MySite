@@ -133,6 +133,23 @@
     <script src="assets/js/Circle-Nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
     <script src="assets/js/theme.js"></script>
+	<p  style="font-family: Aladin, cursive;padding:5px">Views:<span id="count"</span> time(s).    
+       </p>
+        <script type = "text/javascript">
+            
+             //Replace "pageLoadCount" by "hits" and try
+	//Page load-view counter
+             if (!localStorage.pageLoadCount){
+                 localStorage.pageLoadCount = 0;
+             }
+             
+
+            localStorage.pageLoadCount = parseInt(localStorage.pageLoadCount,10) + 1;
+             document.getElementById('count').textContent = localStorage.pageLoadCount;
+            
+                       
+         
+        </script>
 </body>
 
 </html>
